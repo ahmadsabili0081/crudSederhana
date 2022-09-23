@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+$fontIn :  'Poppins', sans-seri;
+.container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgb(226, 226, 226);
+  h1{
+    text-align: center;
+    font-family: $fontIn;
+    font-size: 40px;
+    margin-top: 70px;
+  }
+  .todo__wrapper{
+    width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.45);
+    form.form{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input.todo{
+        padding: 13px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        width: 90%;
+        border-radius: 10px;
+        font-family: $fontIn;
+      }
+      button.btnAdd{
+        width: 100px;
+        padding: 13px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: unset;
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+    .resultTodo{
+      .todoList{
+        font-family: $fontIn;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0px 0px 10px 10px;
+        border: 1px solid rgb(226, 226, 226);
+        button.completed{
+          padding: 10px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: #49cc4a;
+          i{
+            font-size: 20px;
+          }
+        }
+        .btn__container{
+          a{
+            text-decoration: none;
+            padding: 10px;
+            outline: none;
+          }
+          a.edit{
+            background-color:#49cc4a;
+            i{
+              color: #fff;
+            }
+          }
+          a.delete{
+            background-color: #ff6f47;
+            color: #fff;
+          }
+        }
+      }
+      .todoList.completedCheked{
+        opacity: 0.5;
+        text-decoration: line-through;
+        .btn__container{
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

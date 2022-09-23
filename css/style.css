@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #e2e2e2;
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Poppins", sans-seri;
+  font-size: 40px;
+  margin-top: 70px;
+}
+
+.container .todo__wrapper {
+  width: 500px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.container .todo__wrapper form.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .todo__wrapper form.form input.todo {
+  padding: 13px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  width: 90%;
+  border-radius: 10px;
+  font-family: "Poppins", sans-seri;
+}
+
+.container .todo__wrapper form.form button.btnAdd {
+  width: 100px;
+  padding: 13px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.container .todo__wrapper form.form button.btnAdd i {
+  font-size: 30px;
+}
+
+.container .todo__wrapper .resultTodo .todoList {
+  font-family: "Poppins", sans-seri;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid #e2e2e2;
+}
+
+.container .todo__wrapper .resultTodo .todoList button.completed {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #49cc4a;
+}
+
+.container .todo__wrapper .resultTodo .todoList button.completed i {
+  font-size: 20px;
+}
+
+.container .todo__wrapper .resultTodo .todoList .btn__container a {
+  text-decoration: none;
+  padding: 10px;
+  outline: none;
+}
+
+.container .todo__wrapper .resultTodo .todoList .btn__container a.edit {
+  background-color: #49cc4a;
+}
+
+.container .todo__wrapper .resultTodo .todoList .btn__container a.edit i {
+  color: #fff;
+}
+
+.container .todo__wrapper .resultTodo .todoList .btn__container a.delete {
+  background-color: #ff6f47;
+  color: #fff;
+}
+
+.container .todo__wrapper .resultTodo .todoList.completedCheked {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.container .todo__wrapper .resultTodo .todoList.completedCheked .btn__container {
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */
